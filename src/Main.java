@@ -5,10 +5,15 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();
+        int count = sc.nextInt();       // 테스트 케이스 갯수
+        int[] num = new int[count];     // 갯수의 배열
 
-        for(int i = 1; i <= 9; i++){    // i는 1부터 9까지 증가
-            System.out.println(N + " * " + i + " = " + N * i); // 입력받은 정수 * i = 구구단
+        for(int i = 0; i < num.length; i++){    // 배열만큼 반복
+            int A = sc.nextInt();               // A 입력
+            int B = sc.nextInt();               // B 입력
+
+            System.out.println(A + B);          // A + B 출력
         }
+
     }
 }
