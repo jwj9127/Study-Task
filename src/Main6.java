@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main6 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));   // BufferedReader
@@ -21,7 +21,7 @@ public class Main {
             String string = Integer.toString(c);    // int c를 string으로 형변환
             bw.write(string + "\n");
         }
-            bw.flush();
+        bw.flush();
 
     }
 }
