@@ -1,27 +1,29 @@
+import javax.swing.text.html.parser.Parser;
 import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));   // BufferedReader
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); // BufferedWriter
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int T = Integer.parseInt(br.readLine());        // 테스트 케이스 T를 1줄로 받고 정수형으로 변환
+        String S = br.readLine();
 
-        for(int i = 0; i < T; i++){
-            String  str = br.readLine();       // 두 개의 정수 받기
-
-            StringTokenizer st = new StringTokenizer(str);  // StringTokenizer
-
-            int a = Integer.parseInt(st.nextToken());   // 정수 a, b 토큰으로 나누기
-            int b = Integer.parseInt(st.nextToken());
-
-            int c = a + b;      // a + b
-            String string = Integer.toString(c);    // int c를 string으로 형변환
-            bw.write(string + "\n");
-        }
+        if(S.contains("pi") || S.contains("ka") || S.contains("chu")){
+            S = S.replace("pi", "");
+            S = S.replace("ka", "");
+            S = S.replace("chu", "");
+            if(S == ""){
+                bw.write("YES");
+                bw.flush();
+            }else {
+                bw.write("NO");
+                bw.flush();
+            }
+        }else {
+            bw.write("NO");
             bw.flush();
-
+        }
     }
 }
