@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Stack;
 
-public class Main {
+public class back_10773 {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
