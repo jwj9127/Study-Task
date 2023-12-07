@@ -22,7 +22,7 @@
 	Class.forName("com.mysql.jdbc.Driver");  
  	Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD);
 
-	String jsql = "update signup set userpw=?, userphone=?, username=? where userid=? ";	
+	String jsql = "update USERES set userpw=?, userphone=?, username=? where userid=? ";	
 	PreparedStatement pstmt = con.prepareStatement(jsql);
 	pstmt.setString(1,userpw);
 	pstmt.setString(2,userphone);
@@ -31,7 +31,7 @@
 
 	pstmt.executeUpdate();  
 
-	String jsql2 = "select * from signup where userid=?";
+	String jsql2 = "select * from USERES where userid=?";
 	PreparedStatement pstmt2 = con.prepareStatement(jsql2);
 	pstmt2.setString(1,key);
 

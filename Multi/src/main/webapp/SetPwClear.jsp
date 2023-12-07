@@ -25,7 +25,7 @@
 		Class.forName("com.mysql.jdbc.Driver");  // JDBC 드라이버 로딩
 		Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD);	// DB에 접속
 		
-		String sql = "SELECT * FROM SIGNUP WHERE userid = ? AND username = ? AND userphone = ?";	//SQL문 작성
+		String sql = "SELECT * FROM USERES WHERE userid = ? AND username = ? AND userphone = ?";	//SQL문 작성
 		
 		//PreparedStatement 생성(SQL문의 형틀을 정의)
 		PreparedStatement pstmt = con.prepareStatement(sql);
@@ -36,7 +36,7 @@
 		// sql문 실행
 		pstmt.executeQuery();
 			 
-		String sql2 = "UPDATE SIGNUP SET userpw = ? WHERE userid = ? AND username = ? AND userphone = ?";
+		String sql2 = "UPDATE USERES SET userpw = ? WHERE userid = ? AND username = ? AND userphone = ?";
 		PreparedStatement pstmt2 = con.prepareStatement(sql2);
 		pstmt2.setString(1, userpw);
 		pstmt2.setString(2, userid);

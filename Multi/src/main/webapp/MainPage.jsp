@@ -25,7 +25,7 @@
 		                헬스 유튜버</a>
 			            <a href="DietPage.jsp" style='color: black; cursor: pointer; font-weight: bold; font-size: large; text-decoration: none;'>
 			            다이어트 유튜버</a>
-			            <a href="" style='color: black; cursor: pointer; font-weight: bold; font-size: large; text-decoration: none;'>
+			            <a href="Post.jsp" style='color: black; cursor: pointer; font-weight: bold; font-size: large; text-decoration: none;'>
 			            게시판</a>
 			    </div>
 			            

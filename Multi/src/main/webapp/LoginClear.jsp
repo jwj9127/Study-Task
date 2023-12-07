@@ -16,7 +16,7 @@
 			Class.forName("com.mysql.jdbc.Driver");  // JDBC 드라이버 로딩
 			Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD);	// DB에 접속
 			
-			String sql = "select * from signup where userid = ? and userpw = ?";	//SQL문 작성
+			String sql = "select * from USERES where userid = ? and userpw = ?";	//SQL문 작성
 			
 			//PreparedStatement 생성(SQL문의 형틀을 정의)
 			PreparedStatement pstmt = con.prepareStatement(sql);

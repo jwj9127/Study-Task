@@ -83,7 +83,7 @@ try {
  	 Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD);
 	
  	 String key = (String) session.getAttribute("userid");
-	 String jsql = "select * from signup where userid = ?";
+	 String jsql = "select * from USERES where userid = ?";
 	 PreparedStatement pstmt = con.prepareStatement(jsql);
 	 pstmt.setString(1,key);
 

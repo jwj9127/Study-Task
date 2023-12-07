@@ -23,7 +23,7 @@
 		Class.forName("com.mysql.jdbc.Driver");  // JDBC 드라이버 로딩
 		Connection con = DriverManager.getConnection(DB_URL, DB_ID, DB_PASSWORD);	// DB에 접속
 		
-		String sql = "SELECT userid FROM SIGNUP WHERE username = ? AND userphone = ?";	//SQL문 작성
+		String sql = "SELECT userid FROM USERES WHERE username = ? AND userphone = ?";	//SQL문 작성
 		
 		//PreparedStatement 생성(SQL문의 형틀을 정의)
 		PreparedStatement pstmt = con.prepareStatement(sql);
