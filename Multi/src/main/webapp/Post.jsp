@@ -162,7 +162,7 @@
 	                        <div align="center"><font size=2><%=postId%></font></div>
 	                    </td>
 	                    <td>
-	                        <a href="PostDetail.jsp?postId=<%=postId%>"><font size=2><%=title%></font></a>
+	                        <a href="PostDetail.jsp?postId=<%=postId%>" style="color: black; text-decoration: none;"><font size=2><%=title%></font></a>
 	                    </td>
 	                    <td>
 	                        <div align="center"><font size=2><%=username%></font></a></div>

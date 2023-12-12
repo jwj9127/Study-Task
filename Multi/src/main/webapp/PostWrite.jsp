@@ -90,7 +90,7 @@
         <!-- 글쓰기 -->
         <main style="display: flex; flex-direction: column; justify-content: space-around; align-items: center;
         margin-top: 10vh; padding: 20px;">
-        	<form method="post" action="PostWriteOk.jsp" name="input">
+        	<form method="post" action="PostWriteClear.jsp" name="input">
 		       <div align="center">
 		        <table width="550" border="0" cellspacing="2" cellpadding="3">
 			 	   <tr>

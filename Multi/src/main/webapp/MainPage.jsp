@@ -104,7 +104,7 @@
         <main style="display: flex; width: 98.9vw; justify-content: space-around;">
         	<div style="position: relative;" class = "fade-in-box"; id = "s3";>
         		<img src="images/main.jpg" style="width: 98.9vw; height: 60vh; object-fit:cover;">
-        		<div style="position: absolute; top: 53%; left: 64%; color:#FED14F; font-size: 40px; font-weight: bold; cursor: default;">
+        		<div style="position: absolute; top: 53%; left: 60%; color:#FED14F; font-size: 40px; font-weight: bold; cursor: default;">
         		운동하라. 잘 먹어라. 인내하라. <br> 당신의 몸은 보답할 것이다</div>
         	</div> 
         </main>
